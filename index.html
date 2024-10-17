@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript"
+          src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Learning Robot Fine and Dexterous Manipulation: Perception and Control</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="nav">
+  <div class="nav-container">
+    <a href="https://generative-robot.github.io/index.html#intro">Introduction</a>
+    <a href="https://generative-robot.github.io/index.html#speaker">Speakers</a>
+    <a href="https://generative-robot.github.io/index.html#call">Call for Papers</a>
+    <a href="https://generative-robot.github.io/index.html#schedule">Schedule</a>
+    <a href="https://generative-robot.github.io/index.html#organizers">Organizers</a>
+    <a href="https://generative-robot.github.io/index.html#contact">Contact</a>
+  </div>
+</div>
+
+<div class="title-container">
+  <div style="text-align: center;">
+    <h1>Generative Model for General-Purpose Robots</h1>
+    <div class="subtitle" style="color: #ccc; margin: 20px">
+      ICLR 2025 Workshop, April 27, 2025
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" id="intro">
+    <h2>Introduction</h2>
+
+    <p>Generative models have emerged as powerful tools for creating diverse and novel data, enabling 
+      significant advancements in various domains, including vision, language, and robotics. In the context of 
+      robotics, generative models hold the potential to revolutionize how robots perceive, reason, and interact 
+      with the world, offering a pathway to truly general-purpose robots capable of performing a wide range of 
+      tasks. These models allow robots to autonomously generate behaviors, anticipate future states, and generalize across 
+      tasks and environments—key features needed for robust real-world applications. However, many challenges 
+      remain in leveraging generative models for robotics, such as generating realistic and diverse behaviors 
+      in unstructured environments, integrating multi-modal sensory information, and ensuring real-time performance
+       in dynamic scenarios.</p>
+
+    <p> This workshop aims to bring together researchers from both academia and industry to discuss the latest 
+      advancements and challenges in applying generative models to general-purpose robots. Key topics include 
+      generating task-agnostic behaviors, long-horizon planning, multi-task learning, and bridging the gap between
+       simulation and real-world performance. Researchers will share their work through talks, posters, and 
+       discussions, exploring how generative models can address current limitations in robot adaptability and 
+       generalization.
+    </p>
+
+    <p>
+      We will explore the following focused research questions:
+    </p>
+
+    <b> Generative Models for Imitation Learning</b>
+    <ul>
+      <li> How can generative models be used to autonomously generate diverse and realistic robot behaviors?
+      <li> What techniques can improve generalization to novel tasks and environments?
+    </ul>
+
+    <b> Multi-Modal Perception</b>
+    <ul>
+      <li> How can robots effectively fuse data from multiple sensory modalities using generative models?
+      <li> What are the best strategies for incorporating uncertainty in perception for general-purpose robots?
+    </ul>
+
+    <b> Planning and Control </b>
+    <ul>
+      <li> How can generative models assist in long-horizon planning and decision-making?
+      <li> What role do generative models play in dynamic, unstructured environments?
+    </ul>
+
+    <b> Real-World Deployment </b>
+      <ul>
+        <li>How can we bridge the gap between simulated environments and real-world robot performance?
+        <li>What are the main obstacles in deploying generative models on physical robots in real-time scenarios?
+      </ul>
+    <p>This workshop is designed to attract researchers from academia and industry interested in the intersection of generative models and robotics. Through presentations and discussions, participants will explore how generative models can transform general-purpose robots and push the boundaries of robot autonomy.</p>
+
+  </div>
+
+
+  <div class="section" id="speakers">
+    <h2>Invited Speakers</h2>
+    <div class="people">
+      <a href="https://generative-robot.github.io/">
+        <img src="images/man.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>
+
+      <a href="https://generative-robot.github.io/">
+        <img src="images/man.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>
+
+      <a href="https://generative-robot.github.io/">
+        <img src="images/woman.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>
+
+      <a href="https://generative-robot.github.io/">
+        <img src="images/woman.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>
+
+      <!-- <a href="https://people.csail.mit.edu/pulkitag/">
+        <img src="https://people.csail.mit.edu/pulkitag/images/pulkit.jpg">
+        <div>Pulkit Agrawal</div>
+        <div class="aff">MIT</div>
+      </a>
+      <a href="https://aidx-lab.org/">
+        <img src="https://aidx-lab.org/assets/imgs/group/baeuml-berthold.jpeg">
+        <div>Berthold Bäuml</div>
+        <div class="aff">TUM</div>
+      </a>
+
+      <a href="https://www.dryaseminbekiroglu.com/">
+        <img src="https://images.squarespace-cdn.com/content/v1/6601cd815cb5f946d6b37397/237da078-78a6-4bd1-ad08-926de9349583/YBekiroglu2022.jpg?format=750w">
+        <div>Yasemin Bekiroğlu</div>
+        <div class="aff">Chalmers University of Technology</div>
+      </a>
+
+      <a href="https://www.tu.berlin/en/robotics/about-rbo/prof-dr-oliver-brock">
+        <img src="https://soma-summerschool.dlr.de/wp-content/uploads/2016/10/Oliver_Brock.jpg">
+        <div>Oliver Brock</div>
+        <div class="aff">TU Berlin</div>
+      </a>
+
+      <a href="https://www.robertocalandra.com/about/">
+        <img src="https://pbs.twimg.com/profile_images/1641101263164022786/Sr57Toqs_400x400.jpg">
+        <div>Roberto Calandra</div>
+        <div class="aff">TU Dresden</div>
+      </a>
+
+      <a href="https://renaud-detry.net/">
+        <img src="https://renaud-detry.net/assets/img/detry-480.webp">
+        <div>Renaud Detry</div>
+        <div class="aff">KU Leuven</div>
+      </a>
+
+      <a href="http://people.isir.upmc.fr/doncieux">
+        <img src="https://www.isir.upmc.fr/wp-content/uploads/2021/02/photo_SD3.jpg">
+        <div>Stéphane Doncieux</div>
+        <div class="aff">ISIR</div>
+      </a>
+
+      <a href="https://animesh.garg.tech/">
+        <img src="https://animesh.garg.tech/assets/img/animesh-sept19-sq.jpg">
+        <div>Animesh Garg</div>
+        <div class="aff">Georgia Tech</div>
+      </a>
+
+      <a href="https://faculty.utah.edu/u6002596-Tucker_Hermans/hm/index.hml">
+        <img src="https://faculty.utah.edu/bytes/image.hml?id=u6002596&fullsize=true">
+        <div>Tucker Hermans</div>
+        <div class="aff">University of Utah</div>
+      </a>
+
+      <a href="https://jpsilverio.github.io/">
+        <img src="https://jpsilverio.github.io/images/JoaoSilverio.jpg">
+        <div>João Silvério</div>
+        <div class="aff"> German Aerospace Center (DLR)</div>
+      </a>
+
+      <a href="https://xiaolonw.github.io/">
+        <img src="https://xiaolonw.github.io/static/profile.jpg">
+        <div>Xiaolong Wang</div>
+        <div class="aff">UC San Diego</div>
+      </a>
+
+      <a href="https://ericyi.github.io/">
+        <img src="https://ericyi.github.io/Li_Yi_files/ericyi.jpg">
+        <div>Li Yi</div>
+        <div class="aff">THU</div>
+      </a> -->
+
+    </div>
+    <p> (<small><i>listed alphabetically</i></small>) </p>
+  </div>
+
+  <br>
+
+  <div class="section" id="schedule">
+    <h2>Workshop Schedule</h2>
+    <ul></ul>
+    <style type="text/css">
+        .tg .tg-u4qn {
+            background-color: #D9D9D9;
+            text-align: left;
+            vertical-align: bottom
+        }
+    </style>
+    <table>
+      <tr>
+        <th>Time (GMT+8, Singapore Time Zone)</th>
+        <th>Event</th>
+      </tr>
+      <!--      <tr>-->
+      <!--        <td>08:45 - 08:50</td>-->
+      <!--        <td>Introduction and Opening Remark</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>08:50 - 09:15</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 1: <b>Sammy Christen</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>09:15 - 09:40</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 2: <b>Hanbyul Joo</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>09:40 - 10:00</td>-->
+      <!--        <td>Spotlight Talks 1</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>10:00 - 10:30</td>-->
+      <!--        <td>Coffee Break + Poster Session + Real Robot Demo Session</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>10:30 - 10:55</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 3: <b>Russ Tedrake</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>10:55 - 11:20</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 4: <b>He Wang</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>11:20 - 11:45</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 5: <b>Robert Katzschmann</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>11:45 - 12:10</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 6: <b>Kevin Doherty</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>12:10 - 14:00</td>-->
+      <!--        <td>Lunch Break</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>14:00 - 14:25</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 7: <b>Matei Ciocarlie</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>14:25 - 14:50</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 8: <b>Tess Hellebrekers</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>14:50 - 15:15</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 9: <b>Jitendra Malik</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>15:15 - 15:30</td>-->
+      <!--        <td>Spotlight Talks 2</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>15:30 - 16:00</td>-->
+      <!--        <td>Coffee Break + Poster Session + Real Robot Demo Session</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>16:00 - 17:00</td>-->
+      <!--        <td>Panel Discussion</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>17:00 - 17:15</td>-->
+      <!--        <td>Closing Remark & Award Ceremony</td>-->
+      <!--      </tr>-->
+    </table>
+    <ul></ul>
+  </div>
+  <br>
+
+  <div class="section" id="call">
+    <h2>Call for Papers/Demos</h2>
+
+    <p>
+      The goal of this workshop is to bring together researchers from diverse fields, including machine learning, 
+      robotics, control, perception, and hardware design, who are working on applying generative models to enhance
+       robot capabilities. We encourage submissions that present novel contributions or insights into how 
+       generative models can drive advancements in general-purpose robots. We welcome papers and demonstrations 
+       on the following (but not limited to) topics: (the list is not exhaustive):
+    </p>
+
+    <!--    <p>-->
+    <!--      We are particularly excited to offer a platform for showcasing real-world robotic systems.-->
+    <!--      <b style="color: darkblue">Even without a formal paper, we encourage submissions of videos demonstrating your-->
+    <!--        robots in action. For those-->
+    <!--        able to attend in person, there will be opportunities to showcase your robots live at the workshop!</b>-->
+    <!--      We encourage-->
+    <!--      researchers to submit work in the following areas (the list is not exhaustive):-->
+    <!--    </p>-->
+
+    <ul>
+      <li>Generative models for robotic behavior generation and task generalization
+      <li>Learning-based approaches to enhance robot adaptability and multi-tasking
+      <li>Applications of generative models in robot perception, reasoning, and control
+      <li>Multi-modal sensor fusion using generative models for robot decision-making
+      <li>Generative planning and long-horizon trajectory generation
+      <li>Integration of generative models with real-time robotic systems
+      <li>Bridging the sim-to-real gap with generative models for robot training and deployment
+      <li>Reinforcement learning and generative models for adaptive behavior
+      <li>Applications of generative models in robotic manipulation, navigation, and interaction
+      <li>Data-efficient learning using generative models in robotics
+      <li>Welcoming submissions on any additional topics related to generative models for robots not covered above 😄
+    </ul>
+    <h3>Submission Guidelines</h3>
+        <ul>
+          <li><b style="color: darkblue">Submission Portal for Paper and Demo:</b> <a
+              href="https://generative-robot.github.io/"
+              target="_blank">OpenReview</a>
+          </li>
+          <li><b style="color: darkblue">Paper Submission Guideline:</b></li>
+          <ul>
+            <li><b>Paper Length:</b>
+              Submissions should be either <b>4-page</b> maximum short papers or <b>8-page</b> maximum long papers, excluding references, acknowledgements, and appendices.
+            </li>
+            <li><b>Format:</b>
+              <ul>
+                <li>The format requirement follows the ICLR 2025 main conference. Paper template: <a
+                        href="https://github.com/ICLR/Master-Template/raw/master/iclr2025.zip" target="_blank"> Link</a>. Please make sure your submission is anonymous.
+                <li>Please include the references and appendix in the same PDF as the main paper and submit optional videos
+                  as zip file in supplementary.
+                </li>
+                <li>The maximum file size is 100MB. More information on
+                  format can be found <a
+                      href="https://iclr.cc/Conferences/2025/CallForPapers"
+                      target="_blank">here</a>.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b> Review Process:</b>
+              <ul>
+                <li>All submissions will undergo a peer-review process and will be evaluated based on their relevance and contribution to the workshop’s topics.
+                <li>Accepted submissions will be featured at the workshop through Poster Spotlight Talks (2-minute presentations).
+                <li>They will also be published on the workshop’s websites, along with an optional 2-minute video summary.
+              </ul>
+            </li>
+            <li><b>Dual Submission for Other Conference:</b>
+              <ul>
+                <li>Papers to be submitted or in preparation for submission to other major venues in the
+                  field are allowed.
+                </li>
+                <li>We also welcome published works as long as explicitly stated at the time of submission.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <li><b style="color: darkblue">Visibility:</b> Submissions and reviews will not be public. Only accepted papers
+            will be made public.
+          </li> -->
+        </ul>
+
+        <h3>Timeline</h3>
+        <ul>
+          <li>Submission Deadline: <b> Febuary 15, 2025 </b></li>
+          <li>Notification: <b>March 3, 2025</b></li>
+          <li>Workshop Date: <b>April 27, 2025</b></li>
+        </ul>
+  </div>
+
+  <br>
+  <!--  <div class="section" id="postersessions">-->
+  <!--    <h2>Poster Sessions (TBD after paper acceptance notification)</h2>-->
+  <!--  </div>-->
+
+  <div class="section" id="organizers">
+    <h2>Organizers</h2>
+    <div class="people">
+      <a href="https://linsats.github.io/">
+        <img src="images/lin.jpg">
+        <div>Lin Shao</div>
+        <div class="aff">NUS</div>
+      </a>
+
+      <a href="https://chongkaigao.com/">
+        <img src="https://libero-project.github.io/assets/img/people/chongkaig.png">
+        <div>Chongkai Gao</div>
+        <div class="aff">NUS</div>
+      </a>
+
+      <a href="https://generative-robot.github.io/">
+        <img src="images/man.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>
+
+      <a href="https://generative-robot.github.io/">
+        <img src="images/man.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>
+
+      <a href="https://generative-robot.github.io/">
+        <img src="images/woman.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>
+
+      <a href="https://generative-robot.github.io/">
+        <img src="images/woman.png">
+        <div>TBD</div>
+        <div class="aff">TBD</div>
+      </a>      
+
+      <!-- <a href="https://people.epfl.ch/soheil.gholami?lang=en">
+        <img src="https://people.epfl.ch/private/common/photos/links/351072.jpg?ts=1725910374">
+        <div>Soheil Gholami</div>
+        <div class="aff">EPFL</div>
+      </a>
+
+      <a href="https://people.epfl.ch/xiao.gao">
+        <img src="https://people.epfl.ch/private/common/photos/links/348857.jpg?ts=1725910374">
+        <div>Xiao Gao</div>
+        <div class="aff">EPFL</div>
+      </a>
+
+      <a href="https://newmanlab.mit.edu/lab_members/kunpeng-yao/">
+        <img src="https://newmanlab.mit.edu/wp-content/uploads/2024/05/Kunpeng-Yao-portrait-2024-480x480.jpg">
+        <div>Kunpeng Yao</div>
+        <div class="aff">MIT</div>
+      </a>
+
+      <a href="https://people.epfl.ch/aude.billard">
+        <img src="https://people.epfl.ch/private/common/photos/links/115671.jpg?ts=1725910376">
+        <div>Aude Billard</div>
+        <div class="aff">EPFL</div>
+      </a>
+    </div>
+    <div class="people">
+
+
+      <a href="https://haozhi.io/">
+        <img src="https://haozhi.io/profile.jpg">
+        <div>Haozhi Qi</div>
+        <div class="aff">UC Berkeley</div>
+      </a>
+      <a href="https://chenwangjeremy.net/">
+        <img src="https://chenwangjeremy.net/assets/img/profile.jpeg">
+        <div>Chen Wang</div>
+        <div class="aff">Stanford</div>
+      </a>
+      <a href="https://taochenshh.github.io/">
+        <img src="https://taochenshh.github.io/media/tao_profile.jpg">
+        <div>Tao Chen</div>
+        <div class="aff">MIT</div>
+      </a>
+      <a href="https://contactrika.github.io/">
+        <img src="images/rika_photo_one.jpg">
+        <div>Rika Antonova</div>
+        <div class="aff">University of Cambridge</div>
+      </a>
+
+    </div>
+    <div class="people">
+      <a href="https://yzqin.github.io/">
+        <img src="https://yzqin.github.io/file/qyz_circle.png">
+        <div>Yuzhe Qin</div>
+        <div class="aff">UC San Diego</div>
+      </a>
+      <a href="https://www.lenroe.com/">
+        <img src="images/lennart.jpeg">
+        <div>Lennart Röstel</div>
+        <div class="aff">TUM</div>
+      </a>
+      <a href="https://aidx-lab.org/manipulation/">
+        <img src="images/johannes.jpeg">
+        <div>Johannes Pitz</div>
+        <div class="aff">TUM</div>
+      </a>
+      <a href="https://3d.snu.ac.kr/">
+        <img src="images/youngmin_kim.jpg">
+        <div>Young Min Kim</div>
+        <div class="aff">SNU</div>
+      </a> -->
+    </div>
+  </div>
+
+  <!-- (This workshop is the result of combining two similar workshop proposals that were both accepted to be held at CoRL 2024. <a href="https://www.epfl.ch/labs/lasa/workshop-fine-manipulation/">Link</a> to the other workshop webpage) -->
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div>For questions and comments, please <a href="mailto:linshao@nus.edu.sg">contact us.</a>
+    </div>
+  </div>
+
+  <!-- <div class="foot">
+    © ICLR 2025 Generative Models for General-Purpose Robot Workshop
+  </div> -->
+</div>
+
+
+</body>
+
+</html>
