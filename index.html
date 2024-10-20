@@ -38,22 +38,26 @@
   <div class="section" id="intro">
     <h2>Introduction</h2>
 
-    <p>Generative models have emerged as powerful tools for creating diverse and novel data, enabling 
-      significant advancements in various domains, including vision, language, and robotics. In the context of 
-      robotics, generative models hold the potential to revolutionize how robots perceive, reason, and interact 
-      with the world, offering a pathway to truly general-purpose robots capable of performing a wide range of 
-      tasks. These models allow robots to autonomously generate behaviors, anticipate future states, and generalize across 
-      tasks and environments—key features needed for robust real-world applications. However, many challenges 
-      remain in leveraging generative models for robotics, such as generating realistic and diverse behaviors 
-      in unstructured environments, integrating multi-modal sensory information, and ensuring real-time performance
-       in dynamic scenarios.</p>
+    <p>Recent advances in generative models have emerged as powerful tools for modeling diverse and novel data, enabling 
+      significant advancements in various domains, including text generation and image and video synthesis. In the context of 
+      robotics, generative models hold the potential to revolutionize how robots perceive, reason, and interact with the 
+      world, offering a pathway to truly general-purpose robots capable of performing a wide range of tasks. 
+      These models allow robots to learn and model the behaviors from multi-modal data, anticipate future world 
+      states, automatically synthesize diverse environments and demonstrations, and generalize across tasks and 
+      environments—key features needed for robust real-world applications.</p>
 
-    <p> This workshop aims to bring together researchers from both academia and industry to discuss the latest 
-      advancements and challenges in applying generative models to general-purpose robots. Key topics include 
-      generating task-agnostic behaviors, long-horizon planning, multi-task learning, and bridging the gap between
-       simulation and real-world performance. Researchers will share their work through talks, posters, and 
-       discussions, exploring how generative models can address current limitations in robot adaptability and 
-       generalization.
+    <p>However, many challenges remain in leveraging generative models for building general-purpose robots, 
+      such as modeling realistic and diverse behaviors in unstructured demonstrations, integrating and learning 
+      multi-modal sensory information, long-horizon behavior synthesis, physical-aware contact modeling, 
+      and ensuring real-time performance in dynamic scenarios, and there also remains untapped potential 
+      in combining generative models with robot learning algorithms.</p>
+
+    <p> This workshop aims to bring together researchers from both generative models and robotics to discuss 
+      the latest advancements and challenges in applying generative models to general-purpose robots. 
+      Key topics include generating multi-modal behaviors, long-horizon planning, multi-task learning, 
+      and bridging the gap between simulation and real-world performance. Researchers will share their work through 
+      talks, posters, and discussions, exploring how generative models can address current limitations in robot adaptability 
+      and generalization.
     </p>
 
     <p>
@@ -62,20 +66,26 @@
 
     <b> Generative Models for Imitation Learning and Reinforcement Learning</b>
     <ul>
-      <li> How can generative models be used to autonomously generate diverse and realistic robot behaviors?
-      <li> What techniques can improve generalization to novel tasks and environments?
+      <li> How can generative models be used to model complex and multi-modal behaviors from data and interactions?
+      <li> How to improve generalization to novel tasks and environments?
     </ul>
 
     <b> Multi-Modal Perception</b>
     <ul>
       <li> How can robots effectively fuse data from multiple sensory modalities using generative models?
-      <li> What are the best strategies for incorporating uncertainty in perception for general-purpose robots?
+      <li> How to deal with the embodiment gap and data conflicts from diverse robot dataset sources?
+    </ul>
+
+    <b> Dataset and Environments </b>
+    <ul>
+      <li> How to automatically generate large-scale high-quality synthetic datasets for general-purpose robots?
+      <li> How to fine-tune the trained policy with online interactions?
     </ul>
 
     <b> Planning and Control </b>
     <ul>
       <li> How can generative models assist in long-horizon planning and decision-making?
-      <li> What role do generative models play in dynamic, unstructured environments?
+      <li> How to build physical-aware generative models for control?
     </ul>
 
     <b> Real-World Deployment </b>
@@ -232,18 +242,75 @@
         <th>Time (GMT+8, Singapore Time Zone)</th>
         <th>Event</th>
       </tr>
-      <!--      <tr>-->
-      <!--        <td>08:45 - 08:50</td>-->
-      <!--        <td>Introduction and Opening Remark</td>-->
-      <!--      </tr>-->
-      <!--      <tr>-->
-      <!--        <td>08:50 - 09:15</td>-->
-      <!--        <td>Invited Talk and Mini-Discussion 1: <b>Sammy Christen</b></td>-->
-      <!--      </tr>-->
-      <!--      <tr>-->
-      <!--        <td>09:15 - 09:40</td>-->
-      <!--        <td>Invited Talk and Mini-Discussion 2: <b>Hanbyul Joo</b></td>-->
-      <!--      </tr>-->
+        <tr>
+          <td>08:45 - 09:00</td>
+          <td>Introduction and Opening Remark</td>
+        </tr>
+        <tr>
+          <td>09:50 - 09:30</td>
+          <td>Invited Talk and Mini-Discussion 1</td>
+        </tr>
+        <tr>
+          <td>09:30 - 10:00</td>
+          <td>Invited Talk and Mini-Discussion 2</td>
+        </tr>
+        <tr>
+          <td>10:00 - 10:15</td>
+          <td>Contributed Talk and Mini-Discussion 1</td>
+        </tr>
+        <tr>
+          <td>10:15 - 11:15</td>
+          <td>Poster Session 1</td>
+        </tr>
+        <tr>
+          <td>11:15 - 11:45</td>
+          <td>Invited Talk and Mini-Discussion 3</td>
+        </tr>
+        <tr>
+          <td>11:45 - 12:15</td>
+          <td>Invited Talk and Mini-Discussion 4</td>
+        </tr>
+        <tr>
+          <td>12:15 - 13:30</td>
+          <td>Break</td>
+        </tr>
+        <tr>
+          <td>13:30 - 14:00</td>
+          <td>Invited Talk and Mini-Discussion 5</td>
+        </tr>
+        <tr>
+          <td>14:00 - 14:30</td>
+          <td>Invited Talk and Mini-Discussion 6</td>
+        </tr>
+        <tr>
+          <td>14:30 - 14:45</td>
+          <td>Contributed Talk and Mini-Discussion 2</td>
+        </tr>
+        <tr>
+          <td>14:45 - 15:45</td>
+          <td>Poster Session 2</td>
+        </tr>
+        <tr>
+          <td>15:45 - 16:15</td>
+          <td>Invited Talk and Mini-Discussion 7</td>
+        </tr>
+        <tr>
+          <td>16:15 - 16:30</td>
+          <td>Contributed Talk and Mini-Discussion 3</td>
+        </tr>
+        <tr>
+          <td>16:30 - 17:00</td>
+          <td>Invited Talk and Mini-Discussion 8</td>
+        </tr>
+        <tr>
+          <td>17:00 - 17:45</td>
+          <td>Panel Discussion</td>
+        </tr>        
+        <tr>
+          <td>17:45 - 18:00</td>
+          <td>Closing Remark & Award Ceremony</td>
+        </tr>
+
       <!--      <tr>-->
       <!--        <td>09:40 - 10:00</td>-->
       <!--        <td>Spotlight Talks 1</td>-->
